@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_portada">
+
+    <fragment
+        android:id="@+id/nav_portada"
+        android:name="com.example.proyectofinal.ui.portada.RecomendacionesFragment"
+        android:label="@string/menu_portada"
+        tools:layout="@layout/fragment_recomendaciones" >
+        <action
+            android:id="@+id/abrir_detalle"
+            app:destination="@id/nav_detalle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detalle"
+        android:name="com.example.proyectofinal.ui.detalle.DetalleFragment"
+        android:label="@string/menu_detalle"
+        tools:layout="@layout/fragment_detalle" >
+        <argument
+            android:name="pelicula"
+            app:argType="com.example.proyectofinal.model.Pelicula" />
+        <action
+            android:id="@+id/ir_a_encoladas"
+            app:destination="@id/nav_encoladas" />
+        <action
+            android:id="@+id/ir_a_resenadas_desde_detalle"
+            app:destination="@id/nav_resenadas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_encoladas"
+        android:name="com.example.proyectofinal.ui.encoladas.EncoladasFragment"
+        android:label="@string/menu_encoladas"
+        tools:layout="@layout/fragment_encoladas" >
+        <action
+            android:id="@+id/ir_a_resenadas_desde_encoladas"
+            app:destination="@id/nav_resenadas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_resenadas"
+        android:name="com.example.proyectofinal.ui.resenadas.ResenadasFragment"
+        android:label="@string/menu_resenadas"
+        tools:layout="@layout/fragment_resenadas" />
+</navigation>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Proyecto Final</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Friendix</string>
+    <string name="nav_header_subtitle">¿Te recomiendo una película?</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_portada">Recomendaciones</string>
+    <string name="menu_detalle">¿La quieres ver o ya la viste?</string>
+    <string name="menu_encoladas">Quiero ver:</string>
+    <string name="menu_resenadas">Ya las vi y son:</string>
+    <string name="menu_send">Send</string>
+    <string name="boton_encolar">La quiero ver</string>
+    <string name="boton_resenar">Ya la vi y es...</string>
+    <string name="hint_resena">¿Cómo estuvo? Escríbelo aquí:</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="boton_cancelar">Cancelar</string>
+</resources>
